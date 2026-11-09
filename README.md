@@ -121,6 +121,8 @@ git clone <this-repo> ethics-knowledge && cd ethics-knowledge
 
 ### 2. 同步文章（`sync-zhihu`）
 
+仓库已自带抓取时的全部文章（`ethics/`），克隆后即可直接提问。只有想拉取作者的新回答时才需要这一步。
+
 1. 浏览器登录知乎，复制整条 Cookie（必须含 `d_c0`）。
 2. 二选一提供给脚本：
    - 环境变量 `ZHIHU_COOKIE`；
@@ -192,7 +194,7 @@ python3 .claude/skills/daily-ethics/scripts/daily.py --l2 与恋人   # 只抽�
 ## 版权与使用声明
 
 - 本仓库的**代码和 skill**以 MIT 协议开源。
-- **开源范围不包括文章。** 文章内容的著作权归原作者所有，不随本仓库发布，也不在本仓库的许可范围内。`ethics/` 由你用 `sync-zhihu` 在本地自行抓取，仅供个人学习，不要二次分发抓取到的内容。
+- 文章内容（`ethics/`）收录自知乎作者 john-hexa 的公开回答，著作权归原作者所有，**不在本仓库代码许可（MIT）范围内**；每篇都保留了指向知乎原文的链接。仅供个人学习研究，请勿用于商业用途。如原作者或权利人要求移除，请提 issue，会及时处理。
 - `sync-zhihu` 的请求签名参考了 [NanmiCoder/MediaCrawler](https://github.com/NanmiCoder/MediaCrawler) 的 `libs/zhihu.js`（仅供学习交流，严禁用于商业用途），运行时从其仓库下载，不随本仓库分发。
 - 请遵守知乎的服务条款和你所在地的法律法规，控制抓取频率；Cookie 属于你的账号凭据，不要提交到任何仓库。
 
