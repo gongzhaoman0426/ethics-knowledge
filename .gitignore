@@ -1,5 +1,9 @@
-# 文章内容不在开源范围内：由 sync-zhihu 在本地抓取
-ethics/
+# 文章内容不在开源范围内：由 sync-zhihu 在本地抓取。只保留 ethics/ 和 ethics/未归/ 两个空目录占位
+ethics/*
+!ethics/.gitkeep
+!ethics/未归/
+ethics/未归/*
+!ethics/未归/.gitkeep
 
 # 个人文件
 简历*
