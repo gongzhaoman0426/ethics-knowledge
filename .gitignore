@@ -1,0 +1,14 @@
+# 文章内容不在开源范围内：由 sync-zhihu 在本地抓取
+ethics/
+
+# 个人文件
+简历*
+*简历.*
+
+# 运行产物与凭据
+.claude/skills/daily-ethics/daily-log.csv
+.claude/skills/sync-zhihu/.zhihu_cookie
+.claude/skills/sync-zhihu/.cache/
+__pycache__/
+*.pyc
+.DS_Store
